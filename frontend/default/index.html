@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/time.css">
+	<title>Displayer</title>
+</head>
+
+<body>
+	<div id="main">
+		<div class="header">
+			<div id="warning">
+				<img src="" alt="" srcset="" id="warnIcon">
+				<div id="warnText"></div>
+			</div>
+			<img src="" id="batt">
+			<div id="batteryLevel"></div>
+		</div>
+		<div class="page">
+			<div class="time_container">
+				<div id="time"></div>
+				<div class="weather_now">
+					<img src="" id="wicon">
+					<div id="weatherText"></div>
+				</div>
+			</div>
+			<div class="date_container">
+				<div class="date" id="date"></div>
+				<div class="date" id="week"></div>
+				<div class="date" id="lunar"></div>
+			</div>
+			<div class="date" id="festival"></div>
+			<div class="temp">
+				<div class="displayLocal" id="inner">
+					<div class="wapper">
+						<label for="inTemp">室内温度</label>
+						<div id="inTemp">--°C</div>
+					</div>
+					<div class="wapper">
+						<label for="inHumi">室内湿度</label>
+						<div id="inHumi">--%</div>
+					</div>
+					<div class="wapper">
+						<label for="inBat">电量</label>
+						<div id="inBat">--%</div>
+					</div>
+					<div class="wapper">
+						<label for="inUpdateTime">上报时间</label>
+						<div id="inUpdateTime">---</div>
+					</div>
+				</div>
+				<div class="displayLocal" id="outer">
+					<div class="wapper">
+						<label for="outTemp">室外温度</label>
+						<div id="outTemp">--°C</div>
+					</div>
+					<div class="wapper">
+						<label for="outHumi">室外湿度</label>
+						<div id="outHumi">--%</div>
+					</div>
+					<div class="wapper">
+						<label for="outBat">电量</label>
+						<div id="outBat">--%</div>
+					</div>
+					<div class="wapper">
+						<label for="outUpdateTime">上报时间</label>
+						<div id="outUpdateTime">---</div>
+					</div>
+				</div>
+			</div>
+			<div id="forcast">
+				<div id="he-plugin-standard"></div>
+				<!-- <img src="" id="tempGraph"> -->
+			</div>
+		</div>
+		<div id="sentence">
+		</div>
+	</div>
+</body>
+<script src="./js/time.js"></script>
+<script>
+	WIDGET = {
+		"CONFIG": {
+			"layout": "1",
+			"width": "450",
+			"height": "150",
+			"background": "5",
+			"dataColor": "000000",
+			"borderRadius": "5",
+			"city": "REPLACE_ME",
+			"key": "REPLACE_ME"
+		}
+	}
+</script>
+<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+</html>

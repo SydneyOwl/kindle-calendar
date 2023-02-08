@@ -1,0 +1,169 @@
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+#batteryLevel {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+#isCharging {
+    position: absolute;
+    left: 10px;
+}
+
+#batt {
+    position: absolute;
+    width: 30px;
+    top: 8px;
+    right: 70px;
+}
+
+.time_container,
+.date_container {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+}
+
+.time_container {
+    top: 0;
+}
+
+.weather_now {
+    margin: 25px auto;
+}
+
+#weatherText {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.weather_now img {
+    height: 50px;
+}
+
+.date_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#time {
+    padding-top: 5px;
+    margin: 10px auto;
+    font-size: 7rem;
+}
+
+.date {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.temp {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.displayLocal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.wapper {
+    text-align: center;
+}
+
+.wapper div {
+    font-size: larger;
+}
+
+.wapper label {
+    font-size: larger;
+}
+
+.thinkFestival {
+    margin-top: 20px;
+    position: relative;
+    height: 100%;
+}
+
+#festival {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+    height: 100%;
+}
+
+#think {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25px;
+    font-size: 25px;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#forcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#he-plugin-standard {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+}
+
+#tempGraph {
+    position: absolute;
+    z-index: 1;
+    width: 74%;
+    top: 40px;
+    left: 70px;
+}
+
+#warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warning img {
+    padding-right: 10px;
+    height: 30px;
+}
+
+#sentence {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding:0px 20px;
+	padding-top: 60px;
+}
