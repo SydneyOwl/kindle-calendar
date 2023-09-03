@@ -10,6 +10,7 @@ if [ -f "/owlcalendar/init" ]; then
     sed -i "s/【请替换006】/127.0.0.1/g" js/time.js && \
     sed -i "s/【请替换007】/127.0.0.1/g" js/time.js && \
     sed -i "s/【请替换008】/127.0.0.1/g" js/time.js && \
+    sed -i "s/【请替换00a】/$WIDGETID/g" css/time.css && \
     sed -i "s/【请替换00a】/$WIDGETID/g" index.html && \
     sed -i "s/【请替换00b】/$WIDGETIDS/g" index.html && \
     rm -rf /owlcalendar/init
