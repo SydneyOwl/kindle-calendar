@@ -29,18 +29,20 @@
 示例代码：
 
 ``````sh
-sudo docker run --init -d -p 3000:3000 -e TIANAPI=<TIANAPI> -e HEFENGAPI=<HEFENGAPI> -e CURRPOS=<CURRPOS> -e CITY=<CITY> -e WIDGETKEY=<WIDGETKEY> sydneymrcat/kindle-calendar
+sudo docker run --init -d -p 3000:3000 -e TIANAPI=<TIANAPI> -e HEFENGAPI=<HEFENGAPI> -e CURRPOS=<CURRPOS> -e CITY=<CITY> -e WIDGETKEY=<WIDGETKEY> -e WIDGETID=<WIDGETID> -e WIDGETIDS=<WIDGETIDS> sydneymrcat/kindle-calendar
 ``````
 
 替换尖括号里的内容即可。请先安装docker!
 
-<TIANAPI>: www.tianapi.com
+`<TIANAPI>`: www.tianapi.com
 
-<HEFENGAPI>: [qweather.com](https://www.qweather.com/)
+`<HEFENGAPI>`: [qweather.com](https://www.qweather.com/)
 
-<CURRPOS>: [LocationList/China-City-List-latest.csv at master · qwd/LocationList (github.com)](https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv)中的location id
+`<CURRPOS>`: [LocationList/China-City-List-latest.csv at master · qwd/LocationList (github.com)](https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv)中的location id
 
-<CITY> 和 <WIDGETKEY>:https://widget.qweather.com/create-standard 生成的json对应city和key
+`<CITY>` 和 `<WIDGETKEY>`:https://widget.qweather.com/create-standard 生成的json对应city和key
+
+`<WIDGETID>`和`<WIDGETIDS>`分别对应[免费天气插件 (weatherwidget.org)](https://weatherwidget.org/zh/)生成json的id和a.ids[0]
 
 #### 手动部署
 
@@ -108,6 +110,13 @@ npm start
 
 将两个脚本文件复制到 `/mnt/us`内，再将conf文件复制到 `/etc/upstart`内，最后 `nano /etc/crontab/root`,加入一行 `* * * * * /mnt/us/displaySaver.sh`,最后reboot下，你的日历大概就ok了。
 
+### 适配其他kindle
+
+懂前端的同学可以自己写html，注意尺寸要适配kindle的屏幕尺寸。再把node里截图尺寸改了
+
 ### 最后...
+
+玩腻了想把它变回kindle？很简单，ssh到kindle，把 ` /etc/crontab/root`复原，再把 `/etc/upstart`里之前复制进去的conf删掉就行
+
 
 估计这个教程有挺多问题...有任何问题欢迎提issue!
