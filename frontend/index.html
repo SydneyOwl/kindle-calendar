@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/time.css">
+	<title>Displayer</title>
+</head>
+
+<body>
+	<div id="main">
+		<div class="header">
+			<div class="battery">
+				<img src="" id="batt">
+				<div id="batteryLevel"></div>
+			</div>
+		</div>
+		<div class="page">
+			<div class="time_container">
+				<div id="time"></div>
+				<div class="week_day">
+					<div id="date"></div>
+					<div id="week"></div>
+				</div>
+			</div>
+			<div class="date_container">
+				<!-- <div class="date" id="date"></div>-->
+				<div class="date" id="lunar"></div>
+				<div class="date" id="festival"></div>
+			</div>
+			<div id="【请替换00a】" v='1.3' loc='id' a='{"t":"horizontal","lang":"zh","sl_lpl":1,"ids":["【请替换00b】"],"font":"Arial","sl_ics":"one_a","el_nme":3,"sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/zh/" id="【请替换00a】_u" target="_blank">天气插件</a></div><script async src="https://app1.weatherwidget.org/js/?id=【请替换00a】"></script>
+			<div id="he-plugin-standard"></div>
+		</div><!-- <-footer-> -->
+		<div>
+			<div id="sentence">
+			</div>
+			<div id="warning">
+				<img src="" alt="" srcset="" id="warnIcon">
+				<div id="warnText"></div>
+			</div>
+		</div>
+</body>
+<script src="./js/time.js"></script>
+<script>
+	WIDGET = {
+	"CONFIG": {
+		"layout": "1",
+		"width": "450",
+		"height": "100",
+		"background": "5",
+		"dataColor": "434343",
+		"language": "zh",
+		"city": "【请替换004】",
+		"modules": "01",
+		"key": "【请替换005】"
+	}
+	}
+	</script>
+<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+</html>

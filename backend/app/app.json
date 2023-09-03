@@ -1,0 +1,19 @@
+{
+  "name": "Web to Kindle",
+  "description": "A service to create Kindle-ready web page screenshots",
+  "repository": "https://github.com/lankybutmacho/web-to-kindle-heroku",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    }
+  ],
+  "env": {
+    "SCREENSHOT_URL": {
+      "description": "The URL to take a screenshot of. Of which to take a screenshot? Whatever, you get it",
+      "value": "【请替换003】"
+    }
+  }
+}

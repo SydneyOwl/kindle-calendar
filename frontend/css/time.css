@@ -1,0 +1,198 @@
+@font-face {
+    font-family: digit;
+    src: url("../misc/fonts/DS-DIGII.TTF")
+}
+
+@font-face {
+    font-family: hanzi;
+    src: url("../misc/fonts/ZiWeiDeShi/ZiWeiDeShi-2.ttf")
+}
+
+body {
+    width: 536;
+    height: 724;
+    zoom: 2;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header {
+    margin: 20px;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+}
+
+#batteryLevel {
+    margin-left: 10px;
+    font-family: digit;
+}
+
+/* 
+#isCharging {
+    position: absolute;
+    left: 10px;
+} */
+
+#ww_648ce694576e5{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+.battery {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#batt {
+    width: 30px;
+}
+
+#he-plugin-simple {
+    position: absolute;
+    left: 30px;
+}
+
+.time_container {
+    margin-top: 40px;
+}
+
+.time_container,
+.date_container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.week_day {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    font-family: 'digit';
+}
+
+#date,
+#week {
+    margin: 10px;
+}
+
+/* 
+#weatherText {
+    margin: 10px auto;
+    font-size: 2rem;
+}
+
+.weather_now img {
+    margin-top: 10px;
+    height: 70px;
+} */
+
+.date_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "hanzi";
+}
+
+#time {
+    padding-left: 30px;
+    padding-top: 5px;
+    margin: 10px auto;
+    font-size: 10rem;
+    font-family: 'digit';
+}
+
+.date {
+    font-size: 2rem;
+}
+
+.displayLocal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.wapper {
+    text-align: center;
+}
+
+.wapper div {
+    font-size: larger;
+}
+
+.wapper label {
+    font-size: larger;
+}
+
+
+/* #think {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 15px;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+} */
+
+#forcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#he-plugin-standard {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#tempGraph {
+    position: absolute;
+    z-index: 1;
+    width: 74%;
+    top: 40px;
+    left: 70px;
+}
+
+#warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "hanzi";
+    font-size: 1.2rem;
+    position: absolute;
+    height: 100px;
+    width: 480px;
+    bottom: 0px;
+    left: 28px;
+}
+
+#warning img {
+    padding-right: 10px;
+    height: 30px;
+}
+
+#sentence {
+    position: absolute;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 100px;
+    width: 480px;
+    bottom: 0px;
+    left: 28px;
+    font-family: "hanzi";
+}
