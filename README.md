@@ -36,7 +36,7 @@ sudo docker run --init -d -p 3000:3000 -e TIANAPI=<TIANAPI> -e HEFENGAPI=<HEFENG
 
 `<TIANAPI>`: www.tianapi.com
 
-`<HEFENGAPI>`: [qweather.com](https://www.qweather.com/)
+`<HEFENGAPI>`: [console.qweather.com](https://console.qweather.com/)
 
 `<CURRPOS>`: [LocationList/China-City-List-latest.csv at master · qwd/LocationList (github.com)](https://github.com/qwd/LocationList/blob/master/China-City-List-latest.csv)中的location id
 
