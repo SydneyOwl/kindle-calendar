@@ -8,7 +8,7 @@
 
 项目灵感来源自[lankybutmacho/web-to-kindle-heroku](https://github.com/lankybutmacho/web-to-kindle-heroku)以及[Your next smart home device is a $30 used Kindle](https://matthealy.com/kindle)，作者利用node实现自动化的网页截图，并利用已越狱的kindle从部署好的服务端定时自动拉取截图显示在屏幕上。
 
-代码可能有点丑陋，那是因为我前端只会一点皮毛（
+代码可能有点丑陋，哈哈
 
 ## 开始...
 
