@@ -30,8 +30,11 @@ express()
     });
     await page.setCacheEnabled(false);
     await page.setViewport({ width: 1072, height: 1448 });
-    await page.goto(url);
-    await page.waitForTimeout(3000)
+    try{
+      await page.goto(url,{ waitUntil: 'load', timeout: 10000 });
+    }catch{
+      return res.end()
+    }
     await page.screenshot({
       path: '/tmp/screenshot.png',
     });

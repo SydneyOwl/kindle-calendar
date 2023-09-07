@@ -1,6 +1,6 @@
 charge=$(cat /sys/class/power_supply/max77696-battery/status)
 batt=$(gasgauge-info -s)
-curl --connect-timeout 3 http://【修改】:4000?batt=${batt}\&charge=${charge} -o /mnt/us/status.png
+curl --connect-timeout 10 http://【修改】:4000?batt=${batt}\&charge=${charge} -o /mnt/us/status.png
 if [ $? -ne 0 ]; then
    eips -g /mnt/us/noconn.png
    return 1
