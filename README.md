@@ -29,6 +29,8 @@
 示例代码：
 
 ``````sh
+sudo docker pull sydneymrcat/kindle-calendar:latest
+
 sudo docker run --init -d -p 3000:3000 -e TIANAPI=<TIANAPI> -e HEFENGAPI=<HEFENGAPI> -e CURRPOS=<CURRPOS> -e CITY=<CITY> -e WIDGETKEY=<WIDGETKEY> -e WIDGETID=<WIDGETID> -e WIDGETIDS=<WIDGETIDS> sydneymrcat/kindle-calendar
 ``````
 
@@ -42,7 +44,7 @@ sudo docker run --init -d -p 3000:3000 -e TIANAPI=<TIANAPI> -e HEFENGAPI=<HEFENG
 
 `<CITY>` 和 `<WIDGETKEY>`:https://widget.qweather.com/create-standard 生成的json对应city和key
 
-`<WIDGETID>`和`<WIDGETIDS>`分别对应[免费天气插件 (weatherwidget.org)](https://weatherwidget.org/zh/)生成json的id和a.ids[0]
+`<WIDGETID>`和 `<WIDGETIDS>`分别对应[免费天气插件 (weatherwidget.org)](https://weatherwidget.org/zh/)生成json的id和a.ids[0]
 
 #### 手动部署
 
@@ -117,6 +119,5 @@ npm start
 ### 最后...
 
 玩腻了想把它变回kindle？很简单，ssh到kindle，把 ` /etc/crontab/root`复原，再把 `/etc/upstart`里之前复制进去的conf删掉就行
-
 
 估计这个教程有挺多问题...有任何问题欢迎提issue!

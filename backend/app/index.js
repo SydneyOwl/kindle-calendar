@@ -32,6 +32,7 @@ express()
     await page.setViewport({ width: 1072, height: 1448 });
     try{
       await page.goto(url,{ waitUntil: 'load', timeout: 10000 });
+      await page.waitForTimeout(5000)
     }catch{
       return res.end()
     }
