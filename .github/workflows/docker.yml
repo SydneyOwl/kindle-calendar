@@ -36,7 +36,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64
           tags: |
             ${{ secrets.USERNAME }}/kindle-calendar:${{ steps.get_version.outputs.VERSION }}
             ${{ secrets.USERNAME }}/kindle-calendar:latest
