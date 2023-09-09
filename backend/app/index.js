@@ -34,6 +34,7 @@ express()
       await page.goto(url,{ waitUntil: 'load', timeout: 10000 });
       await page.waitForTimeout(5000)
     }catch{
+      await browser.close();
       return res.end()
     }
     await page.screenshot({
